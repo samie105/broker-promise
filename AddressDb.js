@@ -28,6 +28,7 @@ const addressSchema = new mongoose.Schema({
 });
 
 const AddressModel =
-  mongoose.models.AddressLyon || mongoose.model("AddressLyon", addressSchema);
+  mongoose.models.AddressPromise ||
+  mongoose.model("AddressPromise", addressSchema);
 
 module.exports = AddressModel;

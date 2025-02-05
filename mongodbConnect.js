@@ -76,6 +76,6 @@ const userSchema = new mongoose.Schema({
 });
 
 const UserModel =
-  mongoose.models.UserLyon || mongoose.model("UserLyon", userSchema);
+  mongoose.models.UserPromise || mongoose.model("UserPromise", userSchema);
 
 export default UserModel;
